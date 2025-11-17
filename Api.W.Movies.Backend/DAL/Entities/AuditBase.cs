@@ -9,5 +9,5 @@ public class AuditBase
 
     public DateTime CreateDate { get; set; }
 
-    public DateTime ModifiedDate { get; set; }
+    public DateTime ModifiedDate { get; set; } 
 }
