@@ -48,6 +48,7 @@ namespace Api.W.Movies.Backend.Repository
         {
             return await _context.Categories
                 .AsNoTracking()
+                .OrderBy(c => c.Name)
                 .ToListAsync();
         }
 
@@ -87,4 +88,3 @@ namespace Api.W.Movies.Backend.Repository
         }
     }
 }
-
